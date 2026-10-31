@@ -7,6 +7,11 @@ beui is a gui framework. Its goal is to be the best option for:
 How do you be the best?
 
 - web
+  - to be really good at web, you need partial hydration, islands, SSR-only, streaming, etc. if you are canvas-based, you can't do this. this fights with native.
+- native
+  - to be really good at native, you need to render to a canvas and handle a bunch of platform-specific stuff. this fights with web.
+- mobile
+  - idk
 
 What works against us?
 
