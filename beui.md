@@ -29,11 +29,12 @@ So what are the options?
 
 What should it be like?
 
-- unstyled/styled split built in
+- unstyled/styled split built in, so if you want to make an app with its own style, you can use the unstyled layer and get all the functionality from there
 - Provide good components. web gives you so little, if you're making an app you need to make your own copies of so many components or use a library that has done that
 - Make it easy to make your own components. Stuff like focus handling should be easy to define.
 - Fine-grained reactivity, like SolidJS
   - This comes with performance costs and benefits, it isn't necessarily the right choice. But it does let us be pretty efficient.
+- Good spring / user-controlled animation support
 
 Fun stuff
 
