@@ -11,7 +11,7 @@ How do you be the best?
 - native
   - to be really good at native, you need to render to a canvas and handle a bunch of platform-specific stuff. this fights with web.
 - mobile
-  - idk
+  - touch, breakpoints, ?
 
 What works against us?
 
