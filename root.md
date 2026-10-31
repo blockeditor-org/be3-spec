@@ -9,3 +9,13 @@ block-app is a new operating system for creating apps that edit collaborative do
 - how they merge online. given (online session, operation), update the online session * matbe. OPEN QUESTION: it's a bit odd for a separate wasm blob to handle online sessions, because the main plugin blob probably needs to handle them too. and online sessions probably want a different in-memory view of the data than a compact offline version, which you can't really share across different wasm files. we need to decide a clean boundary here
 
 
+
+
+
+**terms**:
+
+- **block-app**: temporary name for the app host
+- **app**: an app built for block-app. currently called a "plugin" in the code
+
+
+
