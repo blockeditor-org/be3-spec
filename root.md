@@ -5,6 +5,7 @@ block-app is a new operating system for creating apps that edit collaborative do
 **block storage model:** block-app stores documents. documents have a type which stores an opaque `Vec<u8>` backed by a wasm blob that defines some operations on them:
 
 - how they merge offline. given (lhs,base,rhs), compute a new merged version of the file.
-- 
+- how you convert offline data to a new blob of online session data
+- how they merge online. given (online session, operation), update the online session * matbe. OPEN QUESTION: it's a bit odd for a separate wasm blob to handle online sessions, because the main plugin blob probably needs to handle them too. and online sessions probably want a different in-memory view of the data than a compact offline version, which you can't really share across different wasm files. we need to decide a clean boundary here
 
 
