@@ -37,6 +37,10 @@ What should it be like?
 - Good spring / user-controlled animation support
 - O(n) layout. I'm not convinced that fancy unsolvable layout algorithms actually behave better. but maybe we can re-evaluate if we need.
 
+How little resource usage can we support?
+
+- It would be great to be able to support small microcontrollers, but fine-grained reactivity competes with this. We would probably need to drop it on really constrained platforms.
+
 Fun stuff
 
 - by using typed components, we can easily use the same jsx syntax for different classes of node trees, like a terminal, or a 3d canvas, within a single node tree
