@@ -34,3 +34,9 @@ What should it be like?
 - Make it easy to make your own components. Stuff like focus handling should be easy to define.
 - Fine-grained reactivity, like SolidJS
   - This comes with performance costs and benefits, it isn't necessarily the right choice. But it does let us be pretty efficient.
+
+Fun stuff
+
+- by using typed components, we can easily use the same jsx syntax for different classes of node trees, like a terminal, or a 3d canvas, within a single node tree
+- theoretically maybe we could make our styled layer pluggable. so then you could implement a whole new styled layer for a TUI, and then an app that only uses
+  beui's styled layer could run on TUI without any changes. that would be hard to do well.
