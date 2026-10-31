@@ -35,6 +35,7 @@ What should it be like?
 - Fine-grained reactivity, like SolidJS
   - This comes with performance costs and benefits, it isn't necessarily the right choice. But it does let us be pretty efficient.
 - Good spring / user-controlled animation support
+- O(n) layout. I'm not convinced that fancy unsolvable layout algorithms actually behave better. but maybe we can re-evaluate if we need.
 
 Fun stuff
 
