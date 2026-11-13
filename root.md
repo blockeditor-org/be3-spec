@@ -46,8 +46,19 @@ What you lose:
 
 we want t
 
+## why wasm apps
 
-**terms**:
+so we use wasm for
+- the write once run anywhere dream: so a 3rd party can distribute a plugin for every platform with one binary, but they only have to test on one platform: it's our job to keep the host the same across platforms
+- security: we don't yet but we will sandbox plugins and restrict some features to require explicit user consent / etc, so opening a random block with a random app in your client is as safe as browsing to a random url in a web browser
+- owning your data: wasm plugins saved in your workspace will work forever (possibly with some features disabled for security sometimes like network access), no one can take your data away from you, you can always downgrade an app version if you need to, and software updates won't break your apps (once we freeze the relevant formats)
+  
+of course, there are issues:
+- wasm apps can never be the best: on web, iframes or separate websites will be better so your app can make use of beui's web core or js libraries for native scrolling & inputs, etc
+- on mobile, dedicated iOS/android apps get access to more hardware capabilities and frameworks, and more performance
+- on native, separate processes get you more hardware capabilities and performance
+
+## terms:
 
 - **be-host**: temporary name for the app host
 - **app**: an app built for be-host
